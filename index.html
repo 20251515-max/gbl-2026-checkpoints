@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Crystal Keep — Tower Defense</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="hud" aria-label="전투 정보">
+        <div class="brand"><span class="brand-mark">✦</span><span>CRYSTAL KEEP</span></div>
+        <div class="stat-row">
+          <div class="stat"><span>WAVE</span><strong id="wave-value">1 / 5</strong></div>
+          <div class="stat"><span>GOLD</span><strong id="gold-value">120</strong></div>
+          <div class="stat hp"><span>CORE</span><strong id="core-value">20</strong></div>
+        </div>
+      </header>
+      <section id="game-container" aria-label="타워디펜스 전투 화면"></section>
+      <footer class="controls">
+        <div class="tower-buttons" aria-label="타워 선택">
+          <button class="tower-button selected" data-tower="archer"><b>⌁</b><span>궁수</span><small>40 G</small></button>
+          <button class="tower-button" data-tower="cannon"><b>✹</b><span>포격</span><small>70 G</small></button>
+          <button class="tower-button" data-tower="frost"><b>❄</b><span>빙결</span><small>55 G</small></button>
+        </div>
+        <button id="wave-button" class="wave-button">다음 웨이브 <span>▶</span></button>
+      </footer>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "monsterTypes": {
+    "normal": { "name": "일반 몬스터", "hp": 58, "speed": 44, "radius": 13, "color": "0xd9515b", "autoDamageMultiplier": 1, "strongDamageMultiplier": 1 },
+    "swift": { "name": "날쌘 몬스터", "hp": 12, "speed": 66, "radius": 8, "color": "0xf3c253", "autoDamageMultiplier": 1, "strongDamageMultiplier": 1 },
+    "armored": { "name": "중장갑 몬스터", "hp": 220, "speed": 24, "radius": 20, "color": "0x6a6c86", "autoDamageMultiplier": 0.2, "strongDamageMultiplier": 4 }
+  },
+  "stages": [
+    { "id": 1, "name": "초원의 관문", "waves": [{ "enemies": [{ "type": "normal", "count": 4 }] }] },
+    { "id": 2, "name": "급습", "waves": [{ "enemies": [{ "type": "normal", "count": 5 }, { "type": "swift", "count": 5 }] }, { "enemies": [{ "type": "armored", "count": 2 }, { "type": "swift", "count": 7 }] }] }
+  ]
+}
